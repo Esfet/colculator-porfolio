@@ -1,23 +1,148 @@
+/*Обнуление*/
 * {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
+:focus,
+:active {
+	outline: none;
+}
+a:focus,
+a:active {
+	outline: none;
+}
+nav,
+footer,
+header,
+aside {
+	display: block;
+}
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+input::-ms-clear {
+	display: none;
+}
+button {
+	cursor: pointer;
+}
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+ul li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: 400;
+}
+/**            normalaize  */
 
-
-.wrapper{
+html,
+body {
+	height: 100%;
 	margin: 0;
+	background: rgb(55, 54, 54);
 }
 
+.wrapper {
+	height: 100%;
+	width: 100%;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.calculator-container {
+	width: 40.72rem;
+	height: 50rem;
+	margin: 0.3rem;
+	background: #222831;
+	border-radius: 20px;
+}
+.logo {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 1.5rem;
+	text-align: center;
+	padding: 0.3rem;
+	color: #f2f2f2;
+	background: #222831;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+.display {
+	height: 6.4rem;
+	margin: 5px 5px 0 5px;
+	background: #f2f2f2;
+	border-radius: 6px;
+}
 .buttons-container {
-	height: 200px;
-	width: 400px;
+	height: 41rem;
+	width: 33.4rem;
 	display: flex;
 	flex-wrap: wrap;
-	
+	background: #222831;
+	margin: 0 auto;
 }
 
-.buttons{
-	margin: 5px 10px;
-	height: 70px;
-	width: 70px;
-	border-radius: 50px;
+.buttons {
+	height: 6.25rem;
+	width: 6.25rem;
+	margin: 1rem;
+	border-radius: 10px;
+	font-size: 2.5rem;
+	background: #f96d00;
+	color: #f2f2f2;
+}
+.buttons:active {
+	background-color: #f96c0094;
+	height: 6rem;
+	width: 6rem;
+	margin: 1.12rem;
+}
+.zero {
+	width: 14.3rem;
+}
+
+.zero:active {
+	background-color: #f96c0094;
+	height: 6rem;
+	width: 14.05rem;
+	margin: 1.12rem;
 }
